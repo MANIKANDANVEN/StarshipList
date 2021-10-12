@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         let url: String
     }
 
+    // ArrayList of Names
     var starShipNameList: Array<String> = Array()
     
     override func viewDidLoad() {
@@ -44,15 +45,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         if let url = URL(string: "https://swapi.dev/api/starships/?format=json") {
-           URLSession.shared.dataTask(with: url) { data, response, error in
+            URLSession.shared.dataTask(with: url) { [self] data, response, error in
         if let data = data {
         let jsonDecoder = JSONDecoder()
         do {
         let parsedJSON = try jsonDecoder.decode(mainData.self, from: data)
             print (parsedJSON.count)
             for item in parsedJSON.results {
-                print(item.name)
-                print(item.model)
+                starShipNameList.append(item.name)
                     }
                 } catch {
         print(error)
@@ -60,7 +60,12 @@ class ViewController: UIViewController {
                }
            }.resume()
         }
+        
+        
     }
+    
+    
+    
 
 
 }
