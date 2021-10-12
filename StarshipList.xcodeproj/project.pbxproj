@@ -16,6 +16,7 @@
 		668E88212715434C0099E333 /* StarshipListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E88202715434C0099E333 /* StarshipListTests.swift */; };
 		668E882B2715434C0099E333 /* StarshipListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E882A2715434C0099E333 /* StarshipListUITests.swift */; };
 		668E882D2715434C0099E333 /* StarshipListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E882C2715434C0099E333 /* StarshipListUITestsLaunchTests.swift */; };
+		668E883A271543C90099E333 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E8839271543C90099E333 /* FavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		668E88262715434C0099E333 /* StarshipListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarshipListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		668E882A2715434C0099E333 /* StarshipListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipListUITests.swift; sourceTree = "<group>"; };
 		668E882C2715434C0099E333 /* StarshipListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		668E8839271543C90099E333 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				668E88122715434B0099E333 /* Assets.xcassets */,
 				668E88142715434B0099E333 /* LaunchScreen.storyboard */,
 				668E88172715434B0099E333 /* Info.plist */,
+				668E8839271543C90099E333 /* FavViewController.swift */,
 			);
 			path = StarshipList;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				668E880E271543460099E333 /* ViewController.swift in Sources */,
 				668E880A271543460099E333 /* AppDelegate.swift in Sources */,
+				668E883A271543C90099E333 /* FavViewController.swift in Sources */,
 				668E880C271543460099E333 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
